@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="CarregarMoedas()">
+    <div id="title-div">
+        <h1 id="h1">Converter</h1>
+        <p><i>The best currency converter in Brazil</i></p>
+    </div>
+    <form id="form-coins">
+        <div>
+            <label for="textbox"><strong>From:</strong></label>
+            <!-- <input class="boxone" type="text" name="textbox" placeholder="type here" required> -->
+            <select id="select1" name="textbox" class="boxone">
+                <!-- <option value="brl">Real Brasileiro</option>
+                <option value="usd">Dolar Americano</option>
+                <option value="eur">Euro</option> -->
+            </select>
+        </div>
+        <div>
+            <label for="textbox-two"><strong>To:</strong></label>
+            <!-- <input class="boxtwo" type="text" name="textbox-two" placeholder="type here" required> -->
+            <select id="select2" name="textbox-two" class="boxtwo">
+                <!-- <option value="brl">Real Brasileiro</option>
+                <option value="usd">Dolar Americano</option>
+                <option value="eur">Euro</option> -->
+            </select>
+        </div>
+        <input id="button" type="button" value="Run" name="button" onclick="doSubmit()">
+    </form>
+    <span id="span"></span>
+    <script src="./js/scripts.js"></script>
+</html>
